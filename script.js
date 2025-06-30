@@ -84,7 +84,7 @@ function initThemeSelector() {
     const themeOptions = document.querySelectorAll('input[name="theme"]');
     
     // 获取保存的主题或使用默认主题
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
     
     // 设置对应的单选按钮为选中状态
