@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // 初始化打字机效果
 function initTypewriter() {
     const typingTexts = [
-        "欢迎来到我的主页",
-        "May you happy every day",
+        "愿你能天天开心，特别是“今天”",
+        "May you happy every day, especially today",
     ];
     
     const options = {
@@ -84,7 +84,7 @@ function initThemeSelector() {
     const themeOptions = document.querySelectorAll('input[name="theme"]');
     
     // 获取保存的主题或使用默认主题
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     
     // 设置对应的单选按钮为选中状态
